@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/sliding_windows.jpg
 [image4]: ./examples/all_test_images.jpg
 [image5]: ./examples/video_frames.jpg
-[image6]: ./examples/None.jpg
+[image6]: ./examples/labeled.jpg
 [image7]: ./examples/final_image.jpg
 [video1]: ./project_video.mp4
 
