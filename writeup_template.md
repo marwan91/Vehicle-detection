@@ -112,7 +112,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 The biggest prolem I faced was the intolerable amount of false positive predictions yielded by the classifier. This is due to choosing parameters that reduced the computation time but made it harder for the classifier to distinguish between vehicle and non vehicle images. To fix that problem , different parameters need to be passed to the HOG function. 
 
 The pipeline is likely to fail in such cases:
-*objects that appear on the road but are not vehicles. Such objects might be mistaken for vehicles , or worse , might not be detected at all.
-*During night time , it is harder to detect edges , which are an important feature in the image to be classified.
-*During rain the road surface becomes reflective and that can confuse the classifier.
+* objects that appear on the road but are not vehicles. Such objects might be mistaken for vehicles , or worse , might not be detected at all.
+* During night time , it is harder to detect edges , which are an important feature in the image to be classified.
+* During rain the road surface becomes reflective and that can confuse the classifier.
 
