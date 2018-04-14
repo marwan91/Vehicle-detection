@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 ---
 ### Writeup / README
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Vehicle-Detection/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
+#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. 
 
 You're reading it!
 
@@ -109,5 +109,10 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-The biggest prolem I faced was the intolerable amount of false positive predictions yielded by the classifier. This is due to chosing parameters that reduced the computation time but made it harder for the classifier to distinguish between vehicle and non vehicle images. To fix that problem , different parameters need to be passed to the HOG function. 
+The biggest prolem I faced was the intolerable amount of false positive predictions yielded by the classifier. This is due to choosing parameters that reduced the computation time but made it harder for the classifier to distinguish between vehicle and non vehicle images. To fix that problem , different parameters need to be passed to the HOG function. 
+
+The pipeline is likely to fail in such cases:
+*objects that appear on the road but are not vehicles. Such objects might be mistaken for vehicles , or worse , might not be detected at all.
+*During night time , it is harder to detect edges , which are an important feature in the image to be classified.
+*During rain the road surface becomes reflective and that can confuse the classifier.
 
