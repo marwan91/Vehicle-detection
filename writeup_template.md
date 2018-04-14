@@ -1,7 +1,3 @@
-## Writeup Template
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
 
 **Vehicle Detection Project**
 
@@ -113,5 +109,5 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+The biggest prolem I faced was the intolerable amount of false positive predictions yielded by the classifier. This is due to chosing parameters that reduced the computation time but made it harder for the classifier to distinguish between vehicle and non vehicle images. To fix that problem , different parameters need to be passed to the HOG function. 
 
