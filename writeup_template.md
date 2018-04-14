@@ -50,7 +50,7 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 I tried various combinations of parameters and I had to make a compromise between computation speed and the quality of results, I chose the parameters that would save a lot of computation time but at the same time I maintained the quality of the results required for a working pipeline.
 
-I have not taken into account the classifier test accuracy when chosing the parameters becausee I have found that the test accuracy is not much relevant to the results of the test images later to be shown.   
+I have not taken into account the classifier test accuracy when chosing the parameters because I have found that the test accuracy is not strongly correlated to quality of the results of classifying the test images later to be shown.   
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
